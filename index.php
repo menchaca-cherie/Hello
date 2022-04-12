@@ -9,11 +9,13 @@ require_once ('vendor/autoload.php');
 
 //Create an instance of the base class
 $f3 = Base::instance();
+echo gettype($f3);
 
-//Define a default route
+//Define a default route /- root directory of the project
 $f3->route('GET /', function(){
     echo '<h1>Hello, world!</h1>';
-});
+}
+);
 
 
 //Run fat free
